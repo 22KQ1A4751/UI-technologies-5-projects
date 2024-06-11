@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>signup</title>
+    <style>
+        body {
+            background-image: url(TOMATO.jpg);
+            background-size: 105%;
+        }
+        a {
+            border: solid;
+        }
+        body {
+            color: black;
+            background-color: whitesmoke;    
+        }
+        h1 {
+            font-size: 15;
+        }
+        h2 {
+            font-size: 15;
+        }
+        header {
+            padding-left: 50px;
+            color: black;   
+            padding-inline: 400px;
+            font-size: 60px;
+        }
+        h3 {
+            font-size: 40px;
+        }
+        b {
+            font-size: 30px;
+            display: block;
+        }
+        input {
+            margin: 10px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>Registration</header>
+    <form action="Loginsuccess.html" onsubmit="return validateForm()">
+        <h3>Personal Details:</h3>
+        <b>
+            <input type="text" id="FirstName" name="FirstName" autofocus placeholder="First Name"><br>
+            <input type="text" id="LastName" name="LastName" placeholder="Last Name"><br>
+            <input type="text" id="Username" name="Username" placeholder="Username"><br>
+            <input type="password" id="Password" name="Password" placeholder="Password"><br>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password"><br>
+            <input list="email" id="Email" name="email" placeholder="Enter Email"><br>
+            <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number"><br>
+        </b>
+        <input type="date" id="Birthday" name="Birthday">Date of Birth<br>
+        <input type="submit" value="Submit">
+    </form>
+    <datalist id="email">
+        <option value="example1@example.com">
+        <option value="example2@example.com">
+        <option value="example3@example.com">
+        <option value="example4@example.com">
+    </datalist>
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("FirstName").value;
+            var lastName = document.getElementById("LastName").value;
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("Password").value;
+            var confirmPassword = document.getElementById("ConfirmPassword").value;
+            var email = document.getElementById("Email").value;
+            var phoneNumber = document.getElementById("PhoneNumber").value;
+            var birthday = document.getElementById("Birthday").value;
+
+            if (firstName.trim() === "" || lastName.trim() === "" || username.trim() === "" || password.trim() === "" || confirmPassword.trim() === "" || email.trim() === "" || phoneNumber.trim() === "" || birthday.trim() === "") {
+                alert("All fields are required.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            // You can add more specific validations for email, phone number, etc. here
+
+            return true;
+        }
+    </script>
+</body>
+</html>

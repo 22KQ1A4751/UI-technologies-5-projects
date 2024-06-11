@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Inspired Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff3d00;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px;
+            border: none;
+            background-color: #ff3d00;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .restaurant-item {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            width: 45%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .restaurant-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zomato</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants, cuisines, or dishes...">
+            <input type="submit" value="Search">
+        </div>
+        <section id="restaurants" class="section">
+            <h2>Featured Restaurants</h2>
+            <div class="restaurants">
+                <div class="restaurant-item">
+                    <img src="https://via.placeholder.com/400x200" alt="Restaurant Image">
+                    <h3>Restaurant Name 1</h3>
+                    <p>Delicious food, great ambiance.</p>
+                </div>
+                <div class="restaurant-item">
+                    <img src="https://via.placeholder.com/400x200" alt="Restaurant Image">
+                    <h3>Restaurant Name 2</h3>
+                    <p>Amazing variety of dishes.</p>
+                </div>
+                <div class="restaurant-item">
+                    <img src="https://via.placeholder.com/400x200" alt="Restaurant Image">
+                    <h3>Restaurant Name 3</h3>
+                    <p>Great place for family dinner.</p>
+                </div>
+                <div class="restaurant-item">
+                    <img src="https://via.placeholder.com/400x200" alt="Restaurant Image">
+                    <h3>Restaurant Name 4</h3>
+                    <p>Best burgers in town.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Zomato. All rights reserved.</p>
+    </footer>
+</body>
+</html>

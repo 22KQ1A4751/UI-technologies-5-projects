@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE 2</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Set a fixed height to the video container */
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Ensure the video stays in the background */
+    }
+
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        width:auto;
+        height:auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Rest of your styles remain unchanged */
+
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 1400px) {
+        body {
+            background-image: url(zomato\ mobilebg.webp);
+        }
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 800px) {
+        body {
+            background-image: url(zomatotabbg.avif);
+            color: aqua;
+        }
+        h1 {
+            font-size: 20px;
+            font-style: oblique;
+            background-color: black;
+            padding: 20px;
+            margin-right: 400px;
+            text-align: center;
+        }
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        width: 270px;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 60px;
+        font-style: oblique;
+        font-weight: bolder;
+        color: antiquewhite;
+    }
+
+    h2 {
+        padding-top: 150px;
+        padding-right: 1000px;
+        font-size: 30px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    footer {
+        margin-left: 1200px;
+        font-size: 16px;
+        padding-top: 100px;
+    }
+
+    div p {
+        padding-left: 1250px;
+        padding-top: 30px;
+        font-style: Lucida;
+        font-size: 20px;
+    }
+    </style>
+</head>     
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="zomatovideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <h1>WELCOME TO ZOMATO</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="login.html">Login</a></li> 
+            <li><a href="signup.html">Register</a></li> 
+            <li><a href="Contact us.html">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <div>
+        <p></p>
+    </div>
+
+    <section>
+        <h2>About Us</h2>   
+        <p>Zomato is an Indian multinational restaurant aggregator <br> and food delivery company.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Incresol. All rights reserved.</p>
+    </footer>
+</body>
+</html>
